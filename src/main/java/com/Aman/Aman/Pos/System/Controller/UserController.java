@@ -33,13 +33,13 @@ public class UserController {
         }
         return ResponseEntity.ok(UserMapper.toDto(user));
     }
-    @GetMapping("/{email}")
-    public ResponseEntity<userDto>getUserByEmail(@RequestHeader("Authorization")String jwt, @PathVariable String email) throws UserException{
-        User user=userService.getUserByEmail(email);
-        if(user==null){
-            throw new UserException("User not found");
-        }
-        return ResponseEntity.ok(UserMapper.toDto(user));
-    }
+    // @GetMapping("/{email}")
+    // public ResponseEntity<userDto>getUserByEmail(@RequestHeader("Authorization")String jwt, @PathVariable String email) throws UserException{
+    //     User user=userService.getUserByEmail(email);
+    //     if(user==null){
+    //         throw new UserException("User not found");
+    //     }
+    //     return ResponseEntity.ok(UserMapper.toDto(user));
+    // }
 
 }

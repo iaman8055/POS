@@ -4,11 +4,7 @@ import java.time.LocalDate;
 
 import com.Aman.Aman.Pos.System.domain.UserRole;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -35,6 +31,8 @@ public class User {
     private String phone;
     @Column(nullable=false)
     private String password;
+    @ManyToOne
+    private Store store;
     private UserRole role;
     private LocalDate createdAt;
     private LocalDate updatedAt;

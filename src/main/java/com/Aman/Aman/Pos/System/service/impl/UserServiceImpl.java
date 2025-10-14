@@ -3,6 +3,7 @@ package com.Aman.Aman.Pos.System.service.impl;
 import java.util.List;
 
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Service;
 
 import com.Aman.Aman.Pos.System.Repository.UserRepository;
 import com.Aman.Aman.Pos.System.configuration.JwtProvider;
@@ -11,6 +12,7 @@ import com.Aman.Aman.Pos.System.service.UserService;
 
 import lombok.RequiredArgsConstructor;
 
+@Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService{
     private final UserRepository userRepository;
