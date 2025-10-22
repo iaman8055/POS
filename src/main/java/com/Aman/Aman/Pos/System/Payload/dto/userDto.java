@@ -17,6 +17,8 @@ public class userDto {
     private String phone;
     private String password;
     private UserRole role;
+    private Long storeId;
+    private Long branchId;
     private LocalDate createdAt;
     private LocalDate updatedAt;
     private LocalDate lastLogin;

@@ -2,7 +2,6 @@ package com.Aman.Aman.Pos.System.Mapper;
 
 import java.time.LocalDateTime;
 
-import com.Aman.Aman.Pos.System.Payload.dto.CategoryDto;
 import com.Aman.Aman.Pos.System.Payload.dto.ProductDto;
 import com.Aman.Aman.Pos.System.model.Category;
 import com.Aman.Aman.Pos.System.model.Product;

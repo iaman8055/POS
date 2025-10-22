@@ -33,6 +33,8 @@ public class User {
     private String password;
     @ManyToOne
     private Store store;
+    @ManyToOne
+    private Branch branch;
     private UserRole role;
     private LocalDate createdAt;
     private LocalDate updatedAt;
